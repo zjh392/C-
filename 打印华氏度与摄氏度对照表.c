@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//´òÓ¡»ªÊÏ¶ÈÓëÉãÊÏ¶È¶ÔÕÕ±í
+//æ‰“å°åæ°åº¦ä¸æ‘„æ°åº¦å¯¹ç…§è¡¨
 int main()
 {
     float fahr , celsius;
     float lower , upper , step;
 
-    lower = 0;          //ÎÂ¶È±íÏÂÏŞ
-    upper = 200;        //ÎÂ¶È±íÉÏÏŞ
-    step = 20;          //²½³¤
+    lower = 0;          //æ¸©åº¦è¡¨ä¸‹é™
+    upper = 200;        //æ¸©åº¦è¡¨ä¸Šé™
+    step = 20;          //æ­¥é•¿
 
-    printf("´òÓ¡»ªÊÏ¶ÈÓëÉãÊÏ¶È¶ÔÕÕ±í\n");
+    printf("æ‰“å°åæ°åº¦ä¸æ‘„æ°åº¦å¯¹ç…§è¡¨\n");
     fahr = lower;
     while(fahr <= upper){
         celsius = 5 * (fahr-32)/9;
