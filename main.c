@@ -1,16 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//此程序与上个版本不同的是：将while结构更改为了for
+//打印华氏度与摄氏度对照表
 int main()
 {
-    int celsisus , fahr;            //摄氏度，华氏度
-    int lower , upper , step;       //温度计下上限，步长
+    float fahr , celsius;
+    float lower , upper , step;
 
-    printf("此程序与上个版本不同的是：将while结构更改为了for");
+    lower = 0;          //温度表下限
+    upper = 200;        //温度表上限
+    step = 20;          //步长
 
+    printf("打印华氏度与摄氏度对照表\n");
     fahr = lower;
-    for(fahr = 0 ;fahr <= 300;fahr = fahr + 20)
-        printf("%3d %6.1f\n",fahr,(5.0/9.0) * (fahr-32));
-    return 0;
+    while(fahr <= upper){
+        celsius = 5 * (fahr-32)/9;
+        printf("%f\t%f\n",fahr,celsius);
+        fahr = fahr + step;
+    }
 }
